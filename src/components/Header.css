@@ -25,6 +25,14 @@
   font-weight: 500;
   color: var(--text-color);
   letter-spacing: 0.02em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-name:hover {
+  color: var(--accent-color);
+  transform: translateY(-1px);
 }
 
 .nav-right {

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './Landing.css'
 import headshot1 from '../assets/images/personalwebsiteheadshot1.jpg'
 import headshot2 from '../assets/images/personalwebsiteheadshot2.jpg'
@@ -24,6 +25,10 @@ const Landing = () => {
         </div>
         <h1 className="name">Jack Hobday</h1>
         <p className="tagline">on a path to becoming remarkable</p>
+        <p className="subheading">in the meantime, enjoy my website</p>
+        <div className="nav-links">
+          <Link to="/footy" className="nav-link-button">footy</Link>
+        </div>
       </div>
     </main>
   )

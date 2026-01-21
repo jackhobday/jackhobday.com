@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useTheme } from '../context/ThemeContext'
 import { GitHubIcon, YouTubeIcon, LinkedInIcon, InstagramIcon, SunIcon, MoonIcon } from './Icons'
 import './Header.css'
@@ -31,7 +32,7 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="nav">
-        <div className="nav-name">john francis (jack) hobday</div>
+        <Link to="/" className="nav-name">john francis (jack) hobday</Link>
         <div className="nav-right">
           {socialLinks.map((link) => (
             <a
